@@ -64,7 +64,6 @@ namespace ANIMAUX.Controllers
                 pub.city = model.Sity;
                 pub.type = model.Status == "lost" ? "l" : "f";
                 var animalId = form["newAnimal"];
-
                 pub.animal_id = entities.animals.Where(x => x.name == animalId).FirstOrDefault().passport_number;
                 entities.SaveChanges();
 

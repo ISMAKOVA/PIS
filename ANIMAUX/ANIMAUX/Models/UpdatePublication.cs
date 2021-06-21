@@ -15,25 +15,25 @@ namespace ANIMAUX.Models
 
         [Required(ErrorMessage = "Введите ссылку")]
         [Url]
-        [Display(Name = "Foto")]
+        [Display(Name = "Фото")]
         public string Foto { get; set; }
 
         [Required(ErrorMessage = "Выберите дату")]
         
-        [Display(Name = "DateTime")]
+        [Display(Name = "Дата")]
         
         public string dateTime { get; set; }
       
         [Required(ErrorMessage = "Введите название города")]
-        [Display(Name = "Sity")]
+        [Display(Name = "Город")]
         public string Sity { get; set; }
 
         [Required]
-        [Display(Name = "Name")]
+        [Display(Name = "Имя")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Выберите статус животного")]
-        [Display(Name = "Status")]
+        [Display(Name = "Статус")]
         public string Status { get; set; }
 
 
